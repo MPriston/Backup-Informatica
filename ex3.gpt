@@ -1,0 +1,17 @@
+algoritmo nota;
+
+variáveis
+  A : real; //nota 1
+  B : real; //nota 2
+  media : real;
+fim-variáveis
+
+início
+ 
+  imprima("Digite a primeira nota:");
+  A := leia();
+  imprima("Digite a segunda nota:");
+  B := leia(); 
+  media := (A + B) / 2;
+  imprima("Sua media é:", media ); 
+fim

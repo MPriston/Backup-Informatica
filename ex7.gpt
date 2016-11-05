@@ -1,0 +1,41 @@
+algoritmo pizza ;
+variáveis
+    p1 : real;
+    p2 : real;
+    p3 : real;
+    r1 : real;
+    r2 : real;
+    r3 : real;
+    pa1 : real;
+    pa2 : real;
+    pa3 : real;
+fim-variáveis
+
+início
+    imprima("Insira o raio da pizza menor:");
+    r1 := leia();
+    imprima("Insira o preço da pizza menor:");
+    p1 := leia();
+    imprima("Insira o raio da pizza media:");
+    r2 := leia();
+    imprima("Insira o preço da pizza media:");
+    p2 := leia();
+    imprima("Insira o raio da pizza grande:");
+    r3 := leia();
+    imprima("Insira o preço da pizza grande:");
+    p3 := leia();
+
+    pa1 := p1/((r1*r1)*3.14);
+    pa2 := p2/((r2*r2)*3.14);
+    pa3 := p3/((r3*r3)*3.14);
+
+    se pa1<pa2 e pa1<pa3 então
+        imprima("A pizza menor tem o melhor custo beneficio.");
+    fim-se
+    se pa2<pa1 e pa2<pa3 então
+        imprima("A pizza media tem o melhor custo beneficio.");
+    fim-se
+    se pa3<pa1 e pa3<pa2 então
+        imprima("A pizza grande tem o melhor custo beneficio.");
+    fim-se
+fim

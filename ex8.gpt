@@ -1,0 +1,36 @@
+algoritmo ordem;
+
+variáveis
+    a : inteiro;
+    b : inteiro;
+    c : inteiro;
+fim-variáveis
+
+início
+    imprima("Por favor digite 3 numeros:");
+    a := leia();
+    b := leia();
+    c := leia();
+
+    se a>b e b>c então
+        imprima(a,b,c);
+    fim-se
+    se a>c e c>b então
+        imprima(a,c ,b);
+    fim-se
+    se b>a e a>c então
+        imprima(b ,a ,c);
+    fim-se
+    se b>c e c>a então
+        imprima(b ,c ,a);
+    fim-se
+    se c>a e a>b então
+        imprima(c ,a ,b);
+    fim-se
+    se c>b e b>a então
+        imprima(c ,b ,a);
+    fim-se
+    se a=b e b=c então
+        imprima(a ,b ,c);
+    fim-se
+fim

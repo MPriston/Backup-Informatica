@@ -1,0 +1,23 @@
+algoritimo para trocar pneu
+
+pegue as  ferramentas necessarias
+afroxe o parafuso 1
+afroxe o parafuso 2
+afroxe o parafuso 3
+afroxe o parafuso 4
+levente o carro com o macaco hidraulico
+retire parafuso 1
+retire parafuso 2
+retire parafuso 3
+retire parafuso 4
+retire o pneu furado
+coloque o pneu novo
+coloque parafuso 1
+coloque parafuso 2
+coloque parafuso 3
+coloque parafuso 4
+abaixe o carro
+aperte parafuso 1
+aperte parafuso 2
+aperte parafuso 3
+aperte parafuso 4

@@ -1,0 +1,46 @@
+algoritmo mediav3;
+
+variáveis
+    n1 : real;
+    n2 : real;
+    m : real;
+    n3 : real;
+    mf : real;
+    ch : inteiro; //carga horaria total do curso
+    nf : inteiro; //numero de faltas, que correspondem a 1h e 40m ou 100m por falta
+fim-variáveis
+
+início
+    imprima("Por favor digite a carga horaria do curso:");
+    ch := leia();
+    imprima("Por favor digite o numero de faltas:");
+    nf := leia();
+
+    se (nf*100) > ((ch*60)*25)/100 então
+        imprima("Voce foi reprovado por falta"); 
+    senão
+        imprima("Por favor digite a primeira nota: ");
+        n1 := leia();
+        imprima("Por favor digite a segunda nota: ");
+        n2 := leia();
+        m := (n1+n2)/2;
+
+        se m>3 e m<7 então
+            imprima("Por favor digite a nota final: ");
+            n3 := leia();
+            mf := (m+n3)/2;
+            se mf >= 5 então //aqui eu estou considerando que a media final para passar eh 5
+                imprima("Voce foi aprovado");
+            senão
+                imprima("Voce foi reprovado");
+            fim-se
+        senão
+            se m >= 7 então
+                imprima("Voce foi aprovado");
+            fim-se
+            se m <= 3 então
+                imprima("Voce foi reprovado");
+            fim-se
+        fim-se
+    fim-se
+fim

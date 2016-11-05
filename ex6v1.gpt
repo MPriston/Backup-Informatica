@@ -1,0 +1,29 @@
+algoritmo mediav1;
+
+variáveis
+    n1 : real;
+    n2 : real;
+    m : real;
+fim-variáveis
+
+início
+
+    imprima("Por favor digite a primeira nota: ");
+    n1 := leia();
+    imprima("Por favor digite a segunda nota: ");
+    n2 := leia();
+    m := (n1+n2)/2;
+
+    se m >= 7 então
+        imprima("Voce passou direto");
+    fim-se
+
+    se m > 3 e m < 7 então
+        imprima("Precisa da nota final");
+    fim-se
+
+    se m <= 3 então
+        imprima("Voce foi reprovado");
+    fim-se 
+
+fim
