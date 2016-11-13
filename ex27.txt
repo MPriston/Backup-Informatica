@@ -1,0 +1,43 @@
+int func43(int eu, int jadv , char *n)
+{
+    static int jogant, jogatu;
+    
+    jogatu ++;
+
+    if(jadv==-1)
+    {
+        strcpy(n, "Priston");
+        jogant = jadv;
+        return 0; 
+    }
+
+    if(jogatu == 6)
+    {
+        jogant = jadv;
+        return 1;
+    }
+
+    if(jadv == 0)
+    {
+        jogant = jadv;
+        return 0;
+    }
+    
+    if(jadv == 1)
+    {
+        if(jogant == 1)
+        {
+            jogant = jadv;
+            return 0;
+        }
+        else
+        {
+            jogant = jadv;
+            return 1;
+        }
+    }
+
+    jogant = jadv;
+
+    return 0;
+}
