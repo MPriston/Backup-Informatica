@@ -7,6 +7,7 @@ int func43(int eu, int jadv , char *n)
     if(jadv==-1)
     {
         strcpy(n, "Priston");
+        printf("Jogador %d = %s\n, eu, n);
         jogant = jadv;
         return 0; 
     }
